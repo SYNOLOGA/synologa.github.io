@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Videollamada de asesoría entre dos estudiantes">
+  <defs>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2a6aa6" stop-opacity=".55"/><stop offset="1" stop-color="#2a6aa6" stop-opacity="0"/></radialGradient>
+    <clipPath id="ventanaA"><rect x="104" y="92" width="132" height="132" rx="10"/></clipPath>
+    <clipPath id="ventanaB"><rect x="244" y="92" width="132" height="132" rx="10"/></clipPath>
+  </defs>
+  <circle cx="240" cy="180" r="170" fill="url(#halo)"/>
+  <ellipse cx="240" cy="316" rx="180" ry="14" fill="#000" opacity=".22"/>
+  <!-- laptop -->
+  <rect x="88" y="76" width="304" height="176" rx="14" fill="#cfe6f5"/>
+  <rect x="98" y="86" width="284" height="156" rx="8" fill="#081a36"/>
+  <path d="M60 262 H420 L444 290 Q446 296 440 296 H40 Q34 296 36 290 Z" fill="#f5fafe"/>
+  <rect x="210" y="268" width="60" height="7" rx="3.5" fill="#cfe6f5"/>
+  <!-- ventana del asesor -->
+  <rect x="104" y="92" width="132" height="132" rx="10" fill="#1f5a92"/>
+  <g clip-path="url(#ventanaA)">
+    <rect x="114" y="104" width="64" height="40" rx="4" fill="#f5fafe"/>
+    <path d="M120 134 q12 -22 24 0 t24 0" fill="none" stroke="#2088b0" stroke-width="3"/>
+    <circle cx="190" cy="150" r="24" fill="#c98e62"/>
+    <path d="M166 146 q24 -34 48 0 q-6 -20 -24 -22 q-18 2 -24 22z" fill="#0c2244"/>
+    <path d="M148 230 q42 -64 84 0z" fill="#e2bc55"/>
+  </g>
+  <!-- ventana del alumno -->
+  <rect x="244" y="92" width="132" height="132" rx="10" fill="#25527f"/>
+  <g clip-path="url(#ventanaB)">
+    <circle cx="310" cy="152" r="24" fill="#f0c49c"/>
+    <path d="M284 150 q4 -38 52 -26 q8 8 4 28 q-6 -14 -26 -16 q-18 0 -30 14z" fill="#6b3f22"/>
+    <path d="M268 230 q42 -64 84 0z" fill="#6cc0e8"/>
+  </g>
+  <!-- barra de la llamada -->
+  <rect x="196" y="230" width="88" height="8" rx="4" fill="#143462"/>
+  <circle cx="226" cy="234" r="7" fill="#e8735f"/><circle cx="246" cy="234" r="7" fill="#6cc0e8"/><circle cx="266" cy="234" r="7" fill="#cfe6f5"/>
+  <!-- globos de diálogo -->
+  <g transform="translate(26 64)">
+    <path d="M0 18 a18 18 0 0 1 18 -18 h68 a18 18 0 0 1 18 18 v14 a18 18 0 0 1 -18 18 h-56 l-16 14 v-14 a18 18 0 0 1 -14 -18z" fill="#e2bc55"/>
+    <text x="18" y="34" font-family="Georgia,serif" font-weight="700" font-size="24" fill="#0c2244">dy/dx</text>
+  </g>
+  <g transform="translate(386 52)">
+    <path d="M0 18 a18 18 0 0 1 18 -18 h34 a18 18 0 0 1 18 18 v12 a18 18 0 0 1 -18 18 h-6 l16 16 -32 -16 a18 18 0 0 1 -30 -18z" fill="#f5fafe"/>
+    <text x="24" y="34" font-family="Arial,sans-serif" font-weight="800" font-size="26" fill="#2088b0">?</text>
+  </g>
+  <g fill="#e2bc55"><path d="M420 172 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/></g>
+  <circle cx="54" cy="200" r="5" fill="#6cc0e8"/>
+</svg>

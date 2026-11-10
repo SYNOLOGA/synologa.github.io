@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Asesor explicando en un pizarrón, con una medalla">
+  <defs>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2a6aa6" stop-opacity=".55"/><stop offset="1" stop-color="#2a6aa6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <circle cx="240" cy="180" r="170" fill="url(#halo)"/>
+  <ellipse cx="240" cy="320" rx="170" ry="14" fill="#000" opacity=".22"/>
+  <!-- pizarrón -->
+  <rect x="150" y="60" width="270" height="176" rx="12" fill="#cfe6f5"/>
+  <rect x="162" y="72" width="246" height="152" rx="6" fill="#123d3a"/>
+  <g stroke="#f5fafe" stroke-width="3" stroke-linecap="round" fill="none" opacity=".9">
+    <path d="M186 196 L386 196 M196 206 L196 92"/>
+    <path d="M206 186 Q262 70 330 150 T384 110"/>
+  </g>
+  <text x="300" y="104" font-family="Georgia,serif" font-style="italic" font-size="19" fill="#e2bc55">∇f = 0</text>
+  <circle cx="262" cy="118" r="6" fill="#e2bc55"/>
+  <rect x="200" y="226" width="170" height="8" rx="4" fill="#6cc0e8"/>
+  <path d="M190 236 L176 304 M380 236 L394 304" stroke="#6cc0e8" stroke-width="7" stroke-linecap="round"/>
+  <!-- asesor -->
+  <path d="M60 314 q0 -96 70 -100 q70 4 70 100z" fill="#2088b0"/>
+  <path d="M112 214 l18 26 18 -26z" fill="#f5fafe"/>
+  <circle cx="130" cy="172" r="36" fill="#c98e62"/>
+  <path d="M92 168 q2 -50 46 -44 q32 4 30 40 q-10 -20 -36 -20 q-26 2 -40 24z" fill="#1b1b2f"/>
+  <circle cx="118" cy="176" r="3.5" fill="#0c2244"/><circle cx="144" cy="176" r="3.5" fill="#0c2244"/>
+  <path d="M120 190 q10 9 20 0" fill="none" stroke="#0c2244" stroke-width="3" stroke-linecap="round"/>
+  <!-- brazo con puntero -->
+  <path d="M180 250 Q206 222 222 196" stroke="#2088b0" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <circle cx="224" cy="192" r="10" fill="#c98e62"/>
+  <path d="M226 190 L262 122" stroke="#e2bc55" stroke-width="6" stroke-linecap="round"/>
+  <!-- medalla -->
+  <g transform="translate(420 236)">
+    <path d="M-16 -46 L-6 -10 M16 -46 L6 -10" stroke="#e8735f" stroke-width="10"/>
+    <circle cx="0" cy="12" r="30" fill="#e2bc55"/><circle cx="0" cy="12" r="21" fill="#c99a2e"/>
+    <path d="M0 -2 l5 10 11 2 -8 8 2 11 -10 -5 -10 5 2 -11 -8 -8 11 -2z" fill="#f5fafe"/>
+  </g>
+  <!-- palomita -->
+  <circle cx="86" cy="98" r="24" fill="#3aa676"/>
+  <path d="M74 98 l8 8 16 -17" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#e2bc55"><path d="M440 96 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/></g>
+</svg>

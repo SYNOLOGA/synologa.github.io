@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Cuaderno abierto con fórmulas y una lupa">
+  <defs>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2a6aa6" stop-opacity=".55"/><stop offset="1" stop-color="#2a6aa6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <circle cx="240" cy="180" r="170" fill="url(#halo)"/>
+  <ellipse cx="240" cy="318" rx="170" ry="16" fill="#000" opacity=".22"/>
+  <!-- libros apilados atrás -->
+  <rect x="300" y="96" width="120" height="26" rx="5" fill="#2088b0"/><rect x="300" y="96" width="14" height="26" fill="#e2bc55"/>
+  <rect x="290" y="122" width="134" height="26" rx="5" fill="#cfe6f5"/><rect x="290" y="122" width="14" height="26" fill="#e8735f"/>
+  <rect x="306" y="70" width="106" height="26" rx="5" fill="#e2bc55"/><rect x="306" y="70" width="14" height="26" fill="#0c2244" opacity=".4"/>
+  <!-- cuaderno abierto -->
+  <path d="M60 128 Q150 108 240 132 L240 302 Q150 280 60 300 Z" fill="#f5fafe"/>
+  <path d="M420 128 Q330 108 240 132 L240 302 Q330 280 420 300 Z" fill="#eaf4fb"/>
+  <path d="M240 132 L240 302" stroke="#9cc3dd" stroke-width="3"/>
+  <g fill="none" stroke="#6cc0e8" stroke-opacity=".45" stroke-width="2">
+    <path d="M78 160 Q150 146 226 164"/><path d="M78 186 Q150 172 226 190"/><path d="M78 212 Q150 198 226 216"/><path d="M78 238 Q150 224 226 242"/><path d="M78 264 Q150 250 226 268"/>
+    <path d="M254 164 Q330 146 402 160"/><path d="M254 190 Q330 172 402 186"/><path d="M254 216 Q330 198 402 212"/><path d="M254 242 Q330 224 402 238"/>
+  </g>
+  <!-- contenido de las hojas -->
+  <text x="92" y="182" font-family="Georgia,serif" font-style="italic" font-size="22" fill="#0c2244">∫ x² dx</text>
+  <text x="92" y="232" font-family="Georgia,serif" font-style="italic" font-size="20" fill="#143462">= x³/3 + C</text>
+  <path d="M100 262 q20 -22 40 0 t40 0" fill="none" stroke="#e2bc55" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(268 168)">
+    <rect width="54" height="40" rx="3" fill="none" stroke="#2088b0" stroke-width="3"/>
+    <text x="9" y="27" font-family="Georgia,serif" font-weight="700" font-size="17" fill="#0c2244">1 2</text>
+    <path d="M70 6 L70 34 M70 34 L118 34" stroke="#0c2244" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M70 34 L110 8" stroke="#e8735f" stroke-width="3" stroke-linecap="round"/><circle cx="110" cy="8" r="4" fill="#e8735f"/>
+  </g>
+  <rect x="268" y="232" width="110" height="8" rx="4" fill="#cfe6f5"/><rect x="268" y="250" width="80" height="8" rx="4" fill="#cfe6f5"/>
+  <!-- marcador dorado -->
+  <path d="M370 112 L370 150 L380 142 L390 150 L390 112 Z" fill="#e2bc55"/>
+  <!-- lupa -->
+  <g transform="translate(338 222) rotate(-20)">
+    <rect x="-9" y="52" width="18" height="70" rx="9" fill="#0c2244"/>
+    <rect x="-9" y="52" width="18" height="16" fill="#c99a2e"/>
+    <circle cx="0" cy="0" r="56" fill="#6cc0e8" fill-opacity=".25" stroke="#e2bc55" stroke-width="12"/>
+    <path d="M-30 -20 Q-20 -40 2 -44" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <!-- chispas -->
+  <g fill="#e2bc55"><path d="M70 92 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5z"/><path d="M196 66 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/></g>
+  <circle cx="440" cy="196" r="5" fill="#6cc0e8"/><circle cx="40" cy="232" r="4" fill="#6cc0e8"/>
+</svg>
