@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Subir apuntes · SYNOLOGA</title>
+  <meta name="description" content="Comparte tus apuntes de ingeniería. Conservas tu autoría y tu nombre aparece junto al material.">
+  <meta name="theme-color" content="#0c2244">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilos.css">
+  <!-- Google AdSense: cuando aprueben la cuenta, pegar aquí el código que da Google. -->
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html"><img src="assets/logo-icono.png" alt="" width="44" height="37">SYNOLOGA</a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="apuntes.html">Ver apuntes</a></li>
+          <li><a href="subir.html" aria-current="page">Subir apuntes</a></li>
+          <li><a href="asesorias.html">Asesorías</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="cabecera-seccion">
+      <div class="contenedor con-ilustracion">
+        <div>
+        <p class="etiqueta-seccion">Subir apuntes</p>
+        <h1>Tus apuntes pueden salvar <span>el semestre de alguien.</span></h1>
+        <p class="entrada">Alumno o profesor, de la universidad que sea: compártelos en 2 minutos. Conservas tu autoría y tu nombre aparece junto al material.</p>
+        </div>
+        <img class="ilustracion" src="assets/ilustraciones/subir-apuntes.svg" alt="" width="480" height="360">
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2>Cómo funciona</h2>
+        <ol class="pasos">
+          <li><h3>Lo compartes</h3><p>Llenas el formulario con la materia y el tema, y adjuntas tu archivo (PDF, Word, PowerPoint o foto legible).</p></li>
+          <li><h3>Lo revisamos</h3><p>Confirmamos que sea tuyo, que no esté copiado ni hecho con IA y que corresponda a la materia.</p></li>
+          <li><h3>Queda disponible</h3><p>En menos de 24 horas aparece en su materia y en el buscador, con tu nombre como autor.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccion blanca">
+      <div class="contenedor dos-columnas">
+        <div class="recuadro recuadro-si">
+          <h3>✓ Sí se acepta</h3>
+          <ul>
+            <li>Apuntes que hiciste tú en clase.</li>
+            <li>Resúmenes, guías de estudio y formularios hechos por ti.</li>
+            <li>Ejercicios que resolviste tú, paso a paso.</li>
+            <li>Material de otra persona, solo con su autorización por escrito.</li>
+            <li>Material propio de profesores: guías, notas de clase o series de ejercicios.</li>
+          </ul>
+        </div>
+        <div class="recuadro recuadro-no">
+          <h3>✕ No se acepta</h3>
+          <ul>
+            <li>Libros completos o material con derechos de editoriales.</li>
+            <li>Exámenes oficiales vigentes o tareas para entregar.</li>
+            <li>Material hecho con IA o copiado de otra persona.</li>
+            <li>Datos personales de otras personas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="tarjeta-envio">
+          <h2>¿Listo? Sube tu material</h2>
+          <label class="casilla">
+            <input type="checkbox" id="acepto">
+            <span>Declaro que el material es 100 % de mi autoría y que, si no lo es, la responsabilidad legal es solo mía. Leí y acepto las <a href="terminos.html">condiciones para compartir material</a> y el <a href="privacidad.html">aviso de privacidad</a>.</span>
+          </label>
+          <p><a class="boton dorado" id="boton-subir" data-enlace="formularioSubir" href="#">Ir al formulario</a></p>
+          <p class="nota-chica">Te llega un correo cuando lo recibimos y otro cuando ya está en la página.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <p class="marca"><img src="assets/logo-icono.png" alt="" width="44" height="37">SYNOLOGA</p>
+        <p>Reunir y organizar el conocimiento. Apuntes, guías y asesorías hechos por estudiantes de ingeniería, revisados y con crédito a su autor.</p>
+      </div>
+      <div>
+        <h3>Explorar</h3>
+        <ul>
+          <li><a href="apuntes.html">Ver apuntes</a></li>
+          <li><a href="subir.html">Subir apuntes</a></li>
+          <li><a href="asesorias.html">Asesorías</a></li>
+          <li><a href="asesorias.html#ser-asesor">Quiero ser asesor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>SYNOLOGA</h3>
+        <ul>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="privacidad.html">Aviso de privacidad</a></li>
+          <li><a href="terminos.html">Condiciones de uso</a></li>
+          <li><a data-enlace="correoContacto" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <p class="legal">SYNOLOGA es un proyecto estudiantil independiente, abierto a estudiantes de ingeniería de cualquier universidad. No está afiliado a ninguna institución educativa.</p>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite" hidden></div>
+  <script src="assets/config.js"></script>
+  <script src="assets/materias.js"></script>
+  <script src="assets/materiales.js"></script>
+  <script src="assets/portadas.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

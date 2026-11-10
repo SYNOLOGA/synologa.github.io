@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SYNOLOGA · Apuntes y asesorías para estudiantes de ingeniería</title>
+  <meta name="description" content="Apuntes, guías y asesorías para estudiantes de ingeniería de cualquier universidad, ordenados por materia.">
+  <meta name="theme-color" content="#0c2244">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilos.css">
+  <!-- Google AdSense: cuando aprueben la cuenta, pegar aquí el código que da Google. -->
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html"><img src="assets/logo-icono.png" alt="" width="44" height="37">SYNOLOGA</a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="apuntes.html">Ver apuntes</a></li>
+          <li><a href="subir.html">Subir apuntes</a></li>
+          <li><a href="asesorias.html">Asesorías</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="portada">
+      <canvas aria-hidden="true"></canvas>
+      <div class="contenedor">
+        <div>
+          <h1>Los apuntes de tu carrera, en un solo lugar.</h1>
+          <p class="entrada">Busca por materia o tema. Los comparten alumnos y profesores de ingeniería de distintas universidades, se revisan antes de subirse y siempre llevan el nombre de quien los hizo.</p>
+          <form class="buscador" id="form-busqueda" role="search" action="apuntes.html">
+            <label class="campo-busqueda" for="busqueda-portada">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+              <input id="busqueda-portada" name="q" type="search" placeholder="Ej. límites, Álgebra Lineal, primer parcial" autocomplete="off" aria-label="Buscar material">
+              <button class="boton boton-chico" type="submit">Buscar</button>
+            </label>
+          </form>
+          <div class="atajos">Más buscadas:
+            <a href="materia.html#calculo-geometria-analitica">Cálculo</a>
+            <a href="materia.html#algebra-lineal">Álgebra Lineal</a>
+            <a href="materia.html#ecuaciones-diferenciales">Ecuaciones Diferenciales</a>
+            <a href="materia.html#calculo-vectorial">Cálculo Vectorial</a>
+          </div>
+        </div>
+        <div class="abanico" aria-hidden="true">
+          <div class="ficha" data-portada="calculo-vectorial"><span>Cálculo Vectorial</span></div>
+          <div class="ficha" data-portada="ecuaciones-diferenciales"><span>Ecuaciones Diferenciales</span></div>
+          <div class="ficha" data-portada="algebra-lineal"><span>Álgebra Lineal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-juego" id="reto">
+      <div class="contenedor">
+        <div class="juego" id="juego">
+          <div class="juego-intro">
+            <p class="etiqueta-seccion">Reto SYNOLOGA</p>
+            <h2>¿Cuántas resuelves en 60 segundos?</h2>
+            <p>Derivadas, integrales, determinantes, límites y la ley de Ohm. Rápidas, de cabeza. ¿Superas tu récord?</p>
+            <div class="juego-marcadores">
+              <div><span>Récord</span><strong id="juego-record">0</strong></div>
+            </div>
+            <button class="boton dorado" type="button" id="juego-iniciar">Empezar el reto</button>
+          </div>
+          <div class="juego-tablero" id="juego-tablero" hidden>
+            <div class="juego-barra">
+              <div><span>Tiempo</span><strong id="juego-tiempo">60</strong></div>
+              <div><span>Puntos</span><strong id="juego-puntos">0</strong></div>
+              <div><span>Racha</span><strong id="juego-racha">0</strong></div>
+            </div>
+            <div class="juego-progreso"><i id="juego-progreso"></i></div>
+            <p class="juego-tema" id="juego-tema"></p>
+            <p class="juego-pregunta" id="juego-pregunta"></p>
+            <div class="juego-opciones" id="juego-opciones"></div>
+          </div>
+          <div class="juego-final" id="juego-final" hidden>
+            <p class="etiqueta-seccion">Se acabó el tiempo</p>
+            <h2><span id="juego-final-puntos">0</span> puntos</h2>
+            <p id="juego-final-texto"></p>
+            <div class="acciones"><button class="boton dorado" type="button" id="juego-otra">Jugar otra vez</button><a class="boton claro" href="apuntes.html">Repasar con apuntes</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="franja-datos" aria-label="SYNOLOGA en números">
+      <div class="contenedor">
+        <div><strong data-dato="materias">14</strong><span>materias de ciencias básicas e ingeniería</span></div>
+        <div><strong data-dato="asesorias">6</strong><span>con asesoría en línea</span></div>
+        <div><strong>24 h</strong><span>para revisar cada material</span></div>
+        <div><strong>100 %</strong><span>gratis y con crédito al autor</span></div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion"><div><h2>¿Qué quieres hacer hoy?</h2><p>Todo SYNOLOGA en tres apartados.</p></div></div>
+        <div class="rejilla-apartados">
+          <a class="apartado" href="apuntes.html">
+            <div class="icono-apartado"><img src="assets/ilustraciones/ver-apuntes.svg" alt="" width="480" height="360"></div>
+            <div class="cuerpo"><h3>Ver apuntes</h3><p>Apuntes, guías y ejercicios de 14 materias, revisados y con el nombre de su autor.</p><span class="ir">Explorar materias →</span></div>
+          </a>
+          <a class="apartado" href="subir.html">
+            <div class="icono-apartado"><img src="assets/ilustraciones/subir-apuntes.svg" alt="" width="480" height="360"></div>
+            <div class="cuerpo"><h3>Subir apuntes</h3><p>Alumno o profesor: comparte lo que hiciste. Lo revisamos y en menos de 24 horas está en la página.</p><span class="ir">Compartir los míos →</span></div>
+          </a>
+          <a class="apartado" href="asesorias.html">
+            <div class="icono-apartado"><img src="assets/ilustraciones/asesorias.svg" alt="" width="480" height="360"></div>
+            <div class="cuerpo"><h3>Asesorías</h3><p>Una hora por Google Meet con alguien que ya aprobó la materia. Gratis, con horario fijo. También puedes ser asesor.</p><span class="ir">Agendar una asesoría →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" style="padding-top:0">
+      <div class="contenedor">
+        <aside class="espacio-publicidad" aria-label="Espacio publicitario">
+          <p class="etiqueta-seccion">Espacio publicitario</p>
+          <h2>Anúnciate con nosotros</h2>
+          <p>Llega a estudiantes de ingeniería justo cuando están estudiando. Papelerías, cursos de idiomas, software, eventos y todo lo que les sirva para la carrera.</p>
+          <a class="boton dorado" data-publicidad href="#">Quiero anunciarme</a>
+          <p class="nota-chica">Revisamos cada anuncio. Lee las <a href="terminos.html#anunciantes">condiciones para anunciantes</a>.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor preguntas">
+        <h2>Preguntas frecuentes</h2>
+        <details><summary>¿Quién puede subir apuntes?</summary><p>Cualquier alumno o profesor de ingeniería, de la universidad que sea. Solo tiene que ser material propio (o con permiso de su autor) y pasar la revisión.</p></details>
+        <details><summary>¿Cuesta algo?</summary><p>No. Ver el material, compartirlo y pedir asesorías es gratis. El proyecto se sostiene con anuncios discretos.</p></details>
+        <details><summary>¿Quién revisa el material?</summary><p>El área de Gestión de Contenido revisa cada archivo antes de subirlo: que sea de quien lo comparte, que esté completo y legible, y que no sea una tarea o examen para entregar.</p></details>
+        <details><summary>¿Mi material lleva mi nombre?</summary><p>Siempre. Conservas tus derechos de autor y tu nombre aparece en la página y en el nombre del archivo. Puedes pedir que lo retiremos cuando quieras.</p></details>
+        <details><summary>¿Cómo funcionan las asesorías?</summary><p>Eliges materia y horario, escribes tu duda y te llega por correo la confirmación con el link de Google Meet. Duran una hora.</p></details>
+        <details><summary>¿Es solo para una universidad?</summary><p>No. SYNOLOGA es un proyecto estudiantil independiente y está abierto a estudiantes de ingeniería de cualquier universidad. Las materias son de ciencias básicas e ingeniería, y se parecen mucho entre escuelas aunque cambie el semestre en que se llevan.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <p class="marca"><img src="assets/logo-icono.png" alt="" width="44" height="37">SYNOLOGA</p>
+        <p>Reunir y organizar el conocimiento. Apuntes, guías y asesorías hechos por estudiantes de ingeniería, revisados y con crédito a su autor.</p>
+      </div>
+      <div>
+        <h3>Explorar</h3>
+        <ul>
+          <li><a href="apuntes.html">Ver apuntes</a></li>
+          <li><a href="subir.html">Subir apuntes</a></li>
+          <li><a href="asesorias.html">Asesorías</a></li>
+          <li><a href="asesorias.html#ser-asesor">Quiero ser asesor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>SYNOLOGA</h3>
+        <ul>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="privacidad.html">Aviso de privacidad</a></li>
+          <li><a href="terminos.html">Condiciones de uso</a></li>
+          <li><a data-enlace="correoContacto" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <p class="legal">SYNOLOGA es un proyecto estudiantil independiente, abierto a estudiantes de ingeniería de cualquier universidad. No está afiliado a ninguna institución educativa.</p>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite" hidden></div>
+  <script src="assets/config.js"></script>
+  <script src="assets/materias.js"></script>
+  <script src="assets/materiales.js"></script>
+  <script src="assets/portadas.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

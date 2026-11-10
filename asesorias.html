@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Asesorías · SYNOLOGA</title>
+  <meta name="description" content="Asesorías gratis y en línea entre estudiantes de ingeniería, con horario fijo.">
+  <meta name="theme-color" content="#0c2244">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilos.css">
+  <!-- Google AdSense: cuando aprueben la cuenta, pegar aquí el código que da Google. -->
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html"><img src="assets/logo-icono.png" alt="" width="44" height="37">SYNOLOGA</a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+      <nav aria-label="Principal">
+        <ul class="menu" id="menu-principal">
+          <li><a href="apuntes.html">Ver apuntes</a></li>
+          <li><a href="subir.html">Subir apuntes</a></li>
+          <li><a href="asesorias.html" aria-current="page">Asesorías</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="cabecera-seccion">
+      <div class="contenedor con-ilustracion">
+        <div>
+        <p class="etiqueta-seccion">Asesorías · gratis y en línea</p>
+        <h1>¿Se te complica una materia? <span>Agenda una asesoría.</span></h1>
+        <p class="entrada">Alguien que ya la aprobó te la explica por Google Meet, una hora, sin costo.</p>
+        <ol class="pasos-cortos">
+          <li><strong>Elige</strong> materia y horario</li>
+          <li><strong>Cuéntanos</strong> tu duda</li>
+          <li><strong>Recibe</strong> tu link de Meet por correo</li>
+        </ol>
+        </div>
+        <img class="ilustracion" src="assets/ilustraciones/asesorias.svg" alt="" width="480" height="360">
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <div>
+            <h2>Horarios</h2>
+            <p>Hora del centro de México. Se agenda la fecha más próxima, con al menos 12 horas de anticipación.</p>
+          </div>
+        </div>
+        <div class="rejilla-horarios" id="horarios-asesoria"></div>
+      </div>
+    </section>
+
+    <section class="seccion blanca">
+      <div class="contenedor">
+        <h2>Antes de entrar</h2>
+        <ul class="lista-reglas">
+          <li><span>✓</span>Es gratis y solo académico: el asesor explica, no hace tareas ni exámenes que se van a calificar.</li>
+          <li><span>✓</span>Llega con tu duda concreta y, si puedes, con el ejercicio a la mano.</li>
+          <li><span>✓</span>Si no puedes ir, avisa con 12 horas de anticipación respondiendo el correo de confirmación.</li>
+          <li><span>✓</span>Trato respetuoso siempre. La sesión no se graba sin permiso de los dos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion" id="ser-asesor">
+      <div class="contenedor">
+        <div class="banda banda-asesor">
+          <div>
+            <img class="ilustracion-asesor" src="assets/ilustraciones/ser-asesor.svg" alt="" width="480" height="360">
+            <p class="etiqueta-seccion">Quiero ser asesor</p>
+            <h2>¿Ya aprobaste una de estas materias?</h2>
+            <p>Elige la materia, resuelve el problema que te toque y manda tu resultado con tu procedimiento y tus horarios. Revisamos que lo hayas resuelto tú y en menos de 48 horas te avisamos por correo. Ya aceptado, las asesorías te llegan solas.</p>
+            <ol class="pasos-cortos pasos-verticales">
+              <li><strong>Elige</strong> la materia que quieres asesorar</li>
+              <li><strong>Resuelve</strong> el problema (cambia en cada intento)</li>
+              <li><strong>Envía</strong> tu resultado y espera la revisión</li>
+            </ol>
+          </div>
+          <div class="reto-asesor" id="reto-asesor">
+            <p class="titulo-chips">1. Elige tu materia</p>
+            <div class="chips" id="asesor-materias"></div>
+            <div class="problema" id="asesor-problema" hidden>
+              <p class="titulo-chips">2. Tu problema <span id="asesor-codigo"></span></p>
+              <p class="problema-texto" id="asesor-texto"></p>
+              <a class="boton dorado" id="asesor-enviar" target="_blank" rel="noopener" href="#">3. Enviar mi respuesta</a>
+              <p class="nota-chica">En el formulario escribe el resultado y, en pocas líneas, cómo llegaste a él. Revisamos que sea tuyo y no de una IA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div>
+        <p class="marca"><img src="assets/logo-icono.png" alt="" width="44" height="37">SYNOLOGA</p>
+        <p>Reunir y organizar el conocimiento. Apuntes, guías y asesorías hechos por estudiantes de ingeniería, revisados y con crédito a su autor.</p>
+      </div>
+      <div>
+        <h3>Explorar</h3>
+        <ul>
+          <li><a href="apuntes.html">Ver apuntes</a></li>
+          <li><a href="subir.html">Subir apuntes</a></li>
+          <li><a href="asesorias.html">Asesorías</a></li>
+          <li><a href="asesorias.html#ser-asesor">Quiero ser asesor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>SYNOLOGA</h3>
+        <ul>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="privacidad.html">Aviso de privacidad</a></li>
+          <li><a href="terminos.html">Condiciones de uso</a></li>
+          <li><a data-enlace="correoContacto" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <p class="legal">SYNOLOGA es un proyecto estudiantil independiente, abierto a estudiantes de ingeniería de cualquier universidad. No está afiliado a ninguna institución educativa.</p>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite" hidden></div>
+  <script src="assets/config.js"></script>
+  <script src="assets/materias.js"></script>
+  <script src="assets/materiales.js"></script>
+  <script src="assets/portadas.js"></script>
+  <script src="assets/problemas.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
